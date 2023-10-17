@@ -1,8 +1,8 @@
 const city = document.querySelector('.city');
 const icon = document.querySelector('.icon');
 const description = document.querySelector('.description');
-const temp = document.querySelector('.temp');
-const humidity = document.querySelector('.humidity');
+const temperature = document.querySelector('.temp');
+const cityHumidity = document.querySelector('.humidity');
 const wind = document.querySelector('.wind');
 const cityWeather = document.querySelector('.weather');
 const searchBar = document.querySelector('.search-bar');
@@ -27,8 +27,8 @@ let weather = {
     city.innerText = "Weather in " + name;
     icon.src = "https://openweathermap.org/img/wn/" + icon + ".png";
     description.innerText = description;
-    temp.innerText = temp + '°c';
-    humidity.innerText = 'Humidity: ' + humidity + '%';
+    temperature.innerText = temp + '°c';
+    cityHumidity.innerText = 'Humidity: ' + humidity + '%';
     wind.innerText = 'Wind speed: ' + speed + 'km/h';
     cityWeather.classList.remove('loading');
     document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
